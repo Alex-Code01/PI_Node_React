@@ -54,3 +54,13 @@ a { color: var(--verde); }
 
 @media (min-width: 700px) { .painel { right: auto; left: 16px; top: 16px; } }
 @media (prefers-reduced-motion: reduce) { .lotacao-nivel { transition: none; } }
+
+/* ---- Adições: menu, favoritos e reporte ---- */
+.menu { display: flex; gap: 16px; align-items: center; } /* links do topo lado a lado */
+.fav { margin: 4px 0 8px; padding: 8px 12px; font: inherit; font-weight: 600; background: #fff; color: var(--tinta); border: 2px solid var(--amarelo); border-radius: 8px; cursor: pointer; }
+.fav[aria-pressed="true"] { background: var(--amarelo); } /* destaque quando já é favorita */
+.link.escuro { color: var(--verde); } /* botão-link sobre fundo claro */
+.reporte { display: grid; gap: 8px; }
+.reporte label { display: grid; gap: 4px; font-weight: 600; font-size: .9rem; }
+.reporte select, .reporte textarea { padding: 8px; font: inherit; border: 2px solid var(--linha); border-radius: 8px; }
+.reporte button { padding: 10px; font: inherit; font-weight: 700; border: 0; border-radius: 8px; background: var(--tinta); color: #fff; cursor: pointer; }

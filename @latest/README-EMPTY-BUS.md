@@ -19,3 +19,10 @@ Copie a pasta `src/` para o projeto (substituindo `src/App.jsx`) e mantenha seu 
 
 ## Próximos passos
 Trocar `src/data/linhas.js` por API/GTFS em `src/services/transporte.js`; depois Cadastro, Favoritos, Reportar.
+
+## Atualização: Favoritos e Reportar
+| História | Onde |
+|---|---|
+| HU10 Favoritos | `pages/Favoritos.jsx`, botão em `pages/Linha.jsx` |
+| HU07 Reportar | `components/Reportar.jsx` (salva em localStorage) |
+Hook novo: `hooks/useLocalStorage.js` (também usado no login).
